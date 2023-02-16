@@ -1,23 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import ButtonList from './components/ButtonList/ButtonList';
+import Checkbox from './components/Checkbox/Checkbox';
+import FormReview from './components/FormReview/FormReview';
+import HideAndSeek from './components/HideAndSeek/HideAndSeek';
+import Increment from './components/Increment/Increment';
+import IncrementAndDecrement from './components/IncrementAndDecrement/IncrementAndDecrement';
+import DataList from './components/ReactDataMassaging/DataList';
+
+const colors = ["blue", "red", "yellow"];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span>task 6.1 increment</span>
+      <br />
+      <Increment />
+      <hr />
+      <span>task 6.2 hide and seek</span>
+      <br />
+      <HideAndSeek />
+      <hr />
+      <span>task 6.3 increment and decrement</span>
+      <br />
+      <IncrementAndDecrement />
+      <hr />
+      <span>task 7.1 child to father colors</span>
+      <br />
+      <ButtonList colorsList={colors} />
+      <hr />
+      <span>task 7.2 checkbox</span>
+      <br />
+      <Checkbox />
+      <hr />
+      <span>task 7.3 form review</span>
+      <br />
+      <FormReview />
+      <hr />
+      <span>task 7.1 react data massaging</span>
+      <br />
+      <DataList />
     </div>
   );
 }
